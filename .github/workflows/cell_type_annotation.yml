@@ -1,6 +1,8 @@
-name: cell_type_annotation
+name: build_image
 on:
   push:
+    paths:
+      - 'Dockerfile' 
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,4 +15,4 @@ jobs:
         username: ${{ secrets.DOCKER_USER }}
         password: ${{ secrets.DOCKER_PASS }}
         dockerfile: Dockerfile
-        tags: "latest"
+        tags: "latest,${{ github.sha }}"
