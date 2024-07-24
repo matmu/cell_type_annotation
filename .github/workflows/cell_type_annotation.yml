@@ -1,0 +1,16 @@
+name: cell_type_annotation
+on:
+  push:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Build and publish on Dockerhub
+      uses: elgohr/Publish-Docker-Github-Action@master
+      with:
+        name: matmu/cell_type_annotation
+        username: ${{ secrets.DOCKER_USER }}
+        password: ${{ secrets.DOCKER_PASS }}
+        dockerfile: Dockerfile
+        tags: "latest"
