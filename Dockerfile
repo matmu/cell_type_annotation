@@ -1,26 +1,19 @@
 # Dockerfile
 FROM r-base:4.4.1
-
 MAINTAINER Matthias Munz <matthias.munz@roche.com>
 
 # General system dependencies
 RUN apt-get -qq update && \
-        apt-get -y -qq install \
+        apt-get -y install \
         python3-dev \
         python3 \
         python3-pip \
+        python3-distutils \
         libcurl4-openssl-dev \
         libssl-dev \
         build-essential \
         nano && \
         apt-get -qq clean
-
-# Manually install distutils
-RUN apt-get -qq update && \
-        apt-get -y install wget && \
-        wget http://ftp.debian.org/debian/pool/main/p/python3-defaults/python3-distutils_3.12.0-1_all.deb && \
-        dpkg -i python3-distutils_3.12.0-1_all.deb && \
-        rm python3-distutils_3.12.0-1_all.deb
 
 # Python packages
 RUN rm /usr/lib/python3.12/EXTERNALLY-MANAGED
