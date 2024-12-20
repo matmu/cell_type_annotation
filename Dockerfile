@@ -22,7 +22,7 @@ RUN pip3 install \
     scanpy==1.9.6 \
     scarches==0.5.10 \
     anndata==0.10.3 \
-    numpy==1.23.4 \
+    numpy==1.26.4 \
     pandas==2.2.1 \
     matplotlib==3.8.2 \
     scipy==1.11.4 \
