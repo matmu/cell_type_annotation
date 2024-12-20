@@ -37,4 +37,4 @@ ENV REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
 # R packages
 RUN R -e "install.packages('BiocManager')"
 RUN R -e "BiocManager::install(version = '3.20')"
-RUN R -e "BiocManager::install('scran', version = '1.34.0')"
+RUN R -e "BiocManager::install('scran')"
