@@ -25,7 +25,7 @@ singularity run --nv --pwd /mnt --bind /path/on/host:/mnt docker://matmu/cell_ty
 ### Docker
 
 ```bash
-docker run --rm -it --gpus=all -v /path/on/host:/mnt -w /mnt matmu/cell_type_annotation:latest
+docker run --rm -it --gpus=all -v /path/on/host:/mnt -w /mnt matmu/cell_type_annotation:latest bash
 ```
 
 
