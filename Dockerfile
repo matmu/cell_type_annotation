@@ -15,6 +15,9 @@ RUN apt-get -qq update && \
         nano && \
         apt-get -qq clean
 
+# Ensure python3 is accessible as python
+RUN ln -sf /usr/bin/python3 /usr/bin/python
+
 # Python packages
 RUN rm /usr/lib/python3.12/EXTERNALLY-MANAGED
 RUN pip3 install \
@@ -28,6 +31,9 @@ RUN pip3 install \
     scipy==1.11.4 \
     rpy2==3.5.14 \
     anndata2ri==1.3.1
+
+# Set CA certificates path for Python requests
+ENV REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
 
 # R packages
 RUN R -e "install.packages('BiocManager')"
