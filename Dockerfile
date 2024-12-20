@@ -20,7 +20,7 @@ RUN ln -sf /usr/bin/python3 /usr/bin/python
 # Python packages
 RUN rm /usr/lib/python3.12/EXTERNALLY-MANAGED
 RUN pip3 install \
-    gdown==4.7.1 \
+    gdown==5.2.0 \
     scanpy==1.9.6 \
     scarches==0.5.10 \
     anndata==0.10.3 \
