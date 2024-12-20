@@ -8,7 +8,7 @@ RUN apt-get -qq update && \
         python3-dev \
         python3 \
         python3-pip \
-        python3-distutils \
+        python3-setuptools \
         libcurl4-openssl-dev \
         libssl-dev \
         build-essential \
