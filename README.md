@@ -19,9 +19,8 @@ We provide a container environment with all required software dependencies.
 ### Singularity
 
 ```bash
-singularity run --nv --pwd /mnt --bind /path/on/host:/mnt docker://matmu/cell_type_annotation:latest
+singularity run --nv --pwd /mnt --bind /path/on/host:/mnt docker://matmu/cell_type_annotation:latest bash
 ```
-
 
 ### Docker
 
