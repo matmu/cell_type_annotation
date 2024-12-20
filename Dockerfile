@@ -31,4 +31,4 @@ RUN pip3 install \
 
 # R packages
 RUN R -e "install.packages('BiocManager')"
-RUN R -e "BiocManager::install('scran', version = '1.34.0')"
+RUN R -e "BiocManager::install('scran')"
