@@ -1,6 +1,10 @@
 # Automated cell type annotation
 
-The script requires GPUs on your host system.
+This repository includes a receipee for a Docker image containing the complete software environment required for automatically annotating plaque scRNA-seq datasets using our atlas. 
+
+For further details, please refer to our preprint: https://www.biorxiv.org/content/10.1101/2024.09.11.612431v1⁠. 
+
+**Important:** The script requires GPUs on your host system.
 
 
 ## Run script using container environment
