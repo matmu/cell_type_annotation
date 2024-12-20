@@ -6,7 +6,7 @@ Pre-build Docker images are available [here](https://hub.docker.com/repository/d
 
 For further details on our atlas, please refer to our preprint: https://www.biorxiv.org/content/10.1101/2024.09.11.612431v1⁠. 
 
-**Important:** The script requires GPUs on your host system.
+**Important:** Running the annotation scripts requires GPUs on your host system.
 
 
 ## Run script using container environment
