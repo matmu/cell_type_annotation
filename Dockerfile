@@ -1,4 +1,3 @@
-# Dockerfile
 FROM r-base:4.4.1
 MAINTAINER Matthias Munz <matthias.munz@roche.com>
 
